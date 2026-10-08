@@ -36,5 +36,16 @@ v.emplace_back(1,2);
 
 vector<int> v(5,100); // {100,100,100,100,100}
 
+vector <int> v(5);
+```
+
+# `push_back` vs `emplace_back`
+
+| Feature | `push_back` | `emplace_back` |
+|---|---|---|
+| **Primary Argument** | Takes a fully constructed object (as an lvalue or rvalue reference). | Takes a variable number of arguments (constructor parameters). |
+| **How It Works** | Copies or moves an existing object into the container. | Uses perfect forwarding to build the object directly inside the container. |
+| **Temporary Objects** | May create a temporary object that is later destroyed. | Bypasses temporary object creation entirely. |
+| **Constructor Types** | Only works with implicit constructors unless explicitly cast. | Can call any constructor, including explicit constructors. |
 
 
