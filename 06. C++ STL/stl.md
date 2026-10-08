@@ -36,7 +36,8 @@ v.emplace_back(1,2);
 
 vector<int> v(5,100); // {100,100,100,100,100}
 
-vector <int> v(5);
+vector <int> v(5);    // creates an empty array of five zeros
+ 
 ```
 
 # `push_back` vs `emplace_back`
