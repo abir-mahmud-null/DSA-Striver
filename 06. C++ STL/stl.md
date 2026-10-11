@@ -16,27 +16,27 @@ cout<<p.first;
 cout<<p.second;
 
 pair<int,pair<int,int>> P = {1,{1,3}};
-cout<<p.second.first;  // shows 1
-cout<<p.second.second; // shows 3
+cout<<p.second.first;              // shows 1
+cout<<p.second.second;             // shows 3
 
 pair<int,int> arr[]={{1,2},{2,5},{5,1}};
-cout<<arr[1].second; // shows 5
+cout<<arr[1].second;               // shows 5
 ```
 
 ## Vector
 
 ```cpp
-vector<int> v;    // {}
-v.push_back(1);    // {1}
-v.emplace_back(2);    // {1,2}
+vector<int> v;            // {}
+v.push_back(1);           // {1}
+v.emplace_back(2);        // {1,2}
 
 vector<pair<int,int>> vec;
 v.push_back({1,2});
 v.emplace_back(1,2);
 
-vector<int> v(5,100); // {100,100,100,100,100}
+vector<int> v(5,100);     // {100,100,100,100,100}
 
-vector <int> v(5);    // creates an empty array of five zeros
+vector <int> v(5);        // creates an empty array of five zeros
 
 cout<<v[0];
  
@@ -56,11 +56,11 @@ cout<<v[0];
 ```cpp
 data_type::iterator variable_name = v.begin();
 vector<int>::iterator it = v.begin();     // {20,10,5,6,7} takes 20
-it++     // as it was increased by 1 now it takes 10
-cout<<*(it)<<" ";     // shows 10 as it was increased by 1
+it++                                     // as it was increased by 1 now it takes 10
+cout<<*(it)<<" ";                        // shows 10 as it was increased by 1
 
 it = it + 2;
-cout<<*(it)<<" ";     // shows 6 , it was 0 then 1 and now 3
+cout<<*(it)<<" ";                         // shows 6 , it was 0 then 1 and now 3
 
 
 vector<int>::iterator it = v.end();     // {10,20,30,40} it will not point to 40 but after 40 if we do it-- then it will point to 40
