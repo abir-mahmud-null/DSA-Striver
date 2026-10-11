@@ -54,6 +54,6 @@ cout<<v[0];
 ## Iterators
 
 ```cpp
-data_type ::iterator variable_name = v.begin();
-
+data_type::iterator variable_name = v.begin();
+vector<int>::iterator it = v.begin();
 ```
