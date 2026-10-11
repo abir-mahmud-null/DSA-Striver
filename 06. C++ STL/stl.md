@@ -61,4 +61,7 @@ cout<<*(it)<<" ";     // shows 10 as it was increased by 1
 
 it = it + 2;
 cout<<*(it)<<" ";     // shows 6 , it was 0 then 1 and now 3
+
+
+vector<int>::iterator it = v.end();     // {10,20,30,40} it will not point to 40 but after 40 if we do it-- then it will point to 40
 ```
