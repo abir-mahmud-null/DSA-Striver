@@ -60,5 +60,5 @@ it++     // as it was increased by 1 now it takes 10
 cout<<*(it)<<" ";     // shows 10 as it was increased by 1
 
 it = it + 2;
-cout<<*(it)<<" ";     // shows 6
+cout<<*(it)<<" ";     // shows 6 , it was 0 then 1 and now 3
 ```
