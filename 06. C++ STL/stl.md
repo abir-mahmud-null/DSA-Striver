@@ -51,4 +51,9 @@ cout<<v[0];
 | **Temporary Objects** | May create a temporary object that is later destroyed. | Bypasses temporary object creation entirely. |
 | **Constructor Types** | Only works with implicit constructors unless explicitly cast. | Can call any constructor, including explicit constructors. |
 
+## Iterators
 
+```cpp
+data_type ::iterator variable_name = v.begin();
+
+```
