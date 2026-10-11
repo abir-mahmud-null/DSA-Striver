@@ -57,5 +57,8 @@ cout<<v[0];
 data_type::iterator variable_name = v.begin();
 vector<int>::iterator it = v.begin();     // {20,10,5,6,7} takes 20
 it++     // as it was increased by 1 now it takes 10
-cout<<*(it)<<" ";
+cout<<*(it)<<" ";     // shows 10 as it was increased by 1
+
+it = it + 2;
+cout<<*(it)<<" ";     // shows 6
 ```
